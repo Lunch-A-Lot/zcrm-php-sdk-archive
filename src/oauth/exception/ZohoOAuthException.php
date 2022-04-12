@@ -2,24 +2,7 @@
 namespace zcrmsdk\oauth\exception;
 
 class ZohoOAuthException extends \Exception
-{
-    
-    protected string $message = 'Unknown exception';
-
-    // Exception message
-    private string $string;
-
-    // Unknown
-    protected int $code = 0;
-
-    protected string $file;
-
-    // Source filename of exception
-    protected int $line;
-
-    // Source line of exception
-    private array $trace;
-    
+{   
     public function __construct($message = null, $code = 0)
     {
         if (! $message) {
